@@ -22,14 +22,34 @@
       padding-top: 0;
       max-height: calc(100vh - var(--padding));
     }
+    #top {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      height: var(--padding);
+      background: #fff;
+    }
+    #bottom {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: var(--padding);
+      background: #fff;
+    }
   </style>
   <body>
-    <img src="031_HIGH_01_XXX.jpg" />
-    <img src="011_HIGH_01_XXX.jpg" loading="lazy" />
-    <img src="020_HIGH_01_XXX.jpg" loading="lazy" />
-    <img src="009_HIGH_01_XXX.jpg" loading="lazy" />
-    <img src="033_HIGH_01_XXX.jpg" loading="lazy" />
-    <img src="019_HIGH_01_XXX.jpg" loading="lazy" />
-    <img src="021_HIGH_01_XXX.jpg" loading="lazy" />
+    <div id="top"></div>
+    <div id="bottom"></div>
+    <div>
+      <img src="031_HIGH_01_XXX.jpg" />
+      <img src="011_HIGH_01_XXX.jpg" loading="lazy" />
+      <img src="020_HIGH_01_XXX.jpg" loading="lazy" />
+      <img src="009_HIGH_01_XXX.jpg" loading="lazy" />
+      <img src="033_HIGH_01_XXX.jpg" loading="lazy" />
+      <img src="019_HIGH_01_XXX.jpg" loading="lazy" />
+      <img src="021_HIGH_01_XXX.jpg" loading="lazy" />
+    </div>
   </body>
 </html>
