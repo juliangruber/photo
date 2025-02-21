@@ -3,22 +3,29 @@
 <head>
   <title>Julian Gruber - Photography</title>
   <style>
+    :root {
+      --padding: 6vh;
+    }
     body {
       margin: 0;
       padding: 0;
       background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      text-align: center;
     }
     img {
-      --max-size: 90%;
-      max-width: var(--max-size);
-      max-height: var(--max-size);
+      max-width: 100vw;
+      max-height: 100vh;
+      padding: var(--padding);
+      box-sizing: border-box;
+    }
+    img:not(:first-child) {
+      padding-top: 0;
+      max-height: calc(100vh - var(--padding));
     }
   </style>
   <body>
     <img src="031_HIGH_01_XXX.jpg" />
+    <img src="011_HIGH_01_XXX.jpg" loading="lazy" />
+    <img src="020_HIGH_01_XXX.jpg" loading="lazy" />
   </body>
 </html>
