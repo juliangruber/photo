@@ -11,6 +11,9 @@
       padding: 0;
       background: #fff;
       text-align: center;
+      font-family: monospace;
+      font-size: 100%;
+      text-transform: uppercase;
     }
     img {
       max-width: 100vw;
@@ -22,26 +25,38 @@
       padding-top: 0;
       max-height: calc(100vh - var(--padding));
     }
-    #top {
+    .frame {
       position: fixed;
       left: 0;
-      top: 0;
       right: 0;
       height: var(--padding);
       background: #fff;
+      box-sizing: border-box;
+      padding: 1vw;
+    }
+    #top {
+      top: 0;
+      color: black;
     }
     #bottom {
-      position: fixed;
-      left: 0;
       bottom: 0;
-      right: 0;
-      height: var(--padding);
-      background: #fff;
+      color: lightgray;
+    }
+    #bottom a:link {
+      text-decoration: none;
+      color: inherit;
+    }
+    #bottom a:hover {
+      text-decoration: underline;
     }
   </style>
   <body>
-    <div id="top"></div>
-    <div id="bottom"></div>
+    <div class="frame" id="top">
+      Julian Gruber
+    </div>
+    <div class="frame" id="bottom">
+      <a href="mailto:mail@juliangruber.com">mail@juliangruber.com</a>
+    </div>
     <div>
       <img src="031_HIGH_01_XXX.jpg" />
       <img src="011_HIGH_01_XXX.jpg" loading="lazy" />
