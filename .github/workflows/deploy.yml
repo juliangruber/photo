@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -29,7 +29,7 @@ jobs:
           key: jampack-${{ github.run_id }}
           restore-keys: |
             jampack
-      - name: Setup Pages
+      - name: Set up Pages
         uses: actions/configure-pages@v5
       - name: Optimize with Jampack
         run: npx @divriots/jampack .
