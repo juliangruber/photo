@@ -23,6 +23,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+      - uses: actions/cache@v3
+        with:
+          path: '.jampack'
+          key: jampack-${{ github.run_id }}
+          restore-keys: |
+            jampack
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Optimize with Jampack
