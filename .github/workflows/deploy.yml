@@ -53,5 +53,7 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
-            .jampack*
-            _jampack*
+            **/.jampack*
+            **/.jampack/**
+            **/_jampack*
+            **/_jampack/**
